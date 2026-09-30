@@ -1,0 +1,24 @@
+classDiagram
+    class Library{
+        +add_book(book:book): void
+        +register_user(User:User): void
+        +create_loan(User:User,book:book): Loan
+    }
+    class book{
+        +title: str 
+        +author: str 
+        +is_availible: bool 
+        +mark_as_available(): void
+        +mark_as_unavailable(): void 
+    }
+    class User{
+        +name: str
+        +email: str 
+        +age: int
+        +phone num: int 
+    }
+    class Loan{
+        +start_date: str
+        +end_date: str 
+        +close_loan(): void
+    }
